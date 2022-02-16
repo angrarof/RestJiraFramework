@@ -1,0 +1,416 @@
+Request method:	POST
+Request URI:	http://localhost:8080/rest/api/2/issue
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=E5FFE2DFC54E3C9E1EDC6F70BE7940BD
+Multiparts:		<none>
+Body:
+{
+    "fields": {
+        "project": {
+            "key": "RFA"
+        },
+        "summary": "Add Comment Scenario 2021-06-18T17:05:58.812",
+        "description": "Description of the issue 1624053958820",
+        "issuetype": {
+            "name": "Bug"
+        }
+    }
+}
+HTTP/1.1 201 
+X-AREQUESTID: 1026x1253x1
+X-ASESSIONID: sxnhci
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+Set-Cookie: atlassian.xsrf.token=BKXJ-H224-33GP-0DMY_883cbfacb45b84c7544332536d1728ac27a4c8c1_lin; Path=/
+X-AUSERNAME: admin
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 18 Jun 2021 22:06:00 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "id": "10210",
+    "key": "RFA-26",
+    "self": "http://localhost:8080/rest/api/2/issue/10210"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/rest/api/2/issue/10210/comment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	issueId=10210
+Headers:		Accept=application/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=E5FFE2DFC54E3C9E1EDC6F70BE7940BD
+Multiparts:		<none>
+Body:
+{
+    "body": "This is my test comment2021-06-18T17:06:02.066"
+}
+HTTP/1.1 201 
+X-AREQUESTID: 1026x1254x1
+X-ASESSIONID: sxnhci
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+Set-Cookie: atlassian.xsrf.token=BKXJ-H224-33GP-0DMY_15eb646c24ed2a936618951ec4021928243ce73d_lin; Path=/
+X-AUSERNAME: admin
+Location: http://localhost:8080/rest/api/2/issue/10210/comment/10205
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 18 Jun 2021 22:06:02 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "self": "http://localhost:8080/rest/api/2/issue/10210/comment/10205",
+    "id": "10205",
+    "author": {
+        "self": "http://localhost:8080/rest/api/2/user?username=admin",
+        "name": "admin",
+        "key": "JIRAUSER10000",
+        "emailAddress": "restapi.demo.2021@gmail.com",
+        "avatarUrls": {
+            "48x48": "http://localhost:8080/secure/useravatar?avatarId=10346",
+            "24x24": "http://localhost:8080/secure/useravatar?size=small&avatarId=10346",
+            "16x16": "http://localhost:8080/secure/useravatar?size=xsmall&avatarId=10346",
+            "32x32": "http://localhost:8080/secure/useravatar?size=medium&avatarId=10346"
+        },
+        "displayName": "restapi.demo.2021@gmail.com",
+        "active": true,
+        "timeZone": "America/Mexico_City"
+    },
+    "body": "This is my test comment2021-06-18T17:06:02.066",
+    "updateAuthor": {
+        "self": "http://localhost:8080/rest/api/2/user?username=admin",
+        "name": "admin",
+        "key": "JIRAUSER10000",
+        "emailAddress": "restapi.demo.2021@gmail.com",
+        "avatarUrls": {
+            "48x48": "http://localhost:8080/secure/useravatar?avatarId=10346",
+            "24x24": "http://localhost:8080/secure/useravatar?size=small&avatarId=10346",
+            "16x16": "http://localhost:8080/secure/useravatar?size=xsmall&avatarId=10346",
+            "32x32": "http://localhost:8080/secure/useravatar?size=medium&avatarId=10346"
+        },
+        "displayName": "restapi.demo.2021@gmail.com",
+        "active": true,
+        "timeZone": "America/Mexico_City"
+    },
+    "created": "2021-06-18T17:06:02.096-0500",
+    "updated": "2021-06-18T17:06:02.096-0500"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/rest/api/2/issue/RFA-23/attachments
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	issueId=RFA-23
+Headers:		X-Atlassian-Token=no-check
+				Accept=*/*
+				Content-Type=multipart/form-data
+Cookies:		JSESSIONID=E5FFE2DFC54E3C9E1EDC6F70BE7940BD
+Multiparts:		------------
+				Content-Disposition: form-data; name = file; filename = file.txt
+				Content-Type: application/octet-stream
+
+				src\test\java\files\file.txt
+Body:			<none>
+HTTP/1.1 200 
+X-AREQUESTID: 1026x1255x1
+X-ASESSIONID: sxnhci
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+Set-Cookie: atlassian.xsrf.token=BKXJ-H224-33GP-0DMY_231cf0e488f0586f7e3e92fa3183c14a635710c1_lin; Path=/
+X-AUSERNAME: admin
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 18 Jun 2021 22:06:02 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+[
+    {
+        "self": "http://localhost:8080/rest/api/2/attachment/10003",
+        "id": "10003",
+        "filename": "file.txt",
+        "author": {
+            "self": "http://localhost:8080/rest/api/2/user?username=admin",
+            "name": "admin",
+            "key": "JIRAUSER10000",
+            "emailAddress": "restapi.demo.2021@gmail.com",
+            "avatarUrls": {
+                "48x48": "http://localhost:8080/secure/useravatar?avatarId=10346",
+                "24x24": "http://localhost:8080/secure/useravatar?size=small&avatarId=10346",
+                "16x16": "http://localhost:8080/secure/useravatar?size=xsmall&avatarId=10346",
+                "32x32": "http://localhost:8080/secure/useravatar?size=medium&avatarId=10346"
+            },
+            "displayName": "restapi.demo.2021@gmail.com",
+            "active": true,
+            "timeZone": "America/Mexico_City"
+        },
+        "created": "2021-06-18T17:06:02.255-0500",
+        "size": 230,
+        "mimeType": "text/plain",
+        "content": "http://localhost:8080/secure/attachment/10003/file.txt"
+    }
+]
+Request method:	POST
+Request URI:	http://localhost:8080/rest/api/2/issue
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=application/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=E5FFE2DFC54E3C9E1EDC6F70BE7940BD
+Multiparts:		<none>
+Body:
+{
+    "fields": {
+        "project": {
+            "key": "RFA"
+        },
+        "summary": "Update Comment Scenario 2021-06-18T17:06:02.298",
+        "description": "Description of the issue 1624053962298",
+        "issuetype": {
+            "name": "Bug"
+        }
+    }
+}
+HTTP/1.1 201 
+X-AREQUESTID: 1026x1256x1
+X-ASESSIONID: sxnhci
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+Set-Cookie: atlassian.xsrf.token=BKXJ-H224-33GP-0DMY_19dcad31958d31db067360a23f2d5488a95731fc_lin; Path=/
+X-AUSERNAME: admin
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 18 Jun 2021 22:06:02 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "id": "10211",
+    "key": "RFA-27",
+    "self": "http://localhost:8080/rest/api/2/issue/10211"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/rest/api/2/issue/10211/comment
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	issueId=10211
+Headers:		Accept=application/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=E5FFE2DFC54E3C9E1EDC6F70BE7940BD
+Multiparts:		<none>
+Body:
+{
+    "body": "This is my test comment2021-06-18T17:06:02.388"
+}
+HTTP/1.1 201 
+X-AREQUESTID: 1026x1257x1
+X-ASESSIONID: sxnhci
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+Set-Cookie: atlassian.xsrf.token=BKXJ-H224-33GP-0DMY_3308172e49372d39bae9ef0af4b4133fbc25d563_lin; Path=/
+X-AUSERNAME: admin
+Location: http://localhost:8080/rest/api/2/issue/10211/comment/10206
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 18 Jun 2021 22:06:02 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "self": "http://localhost:8080/rest/api/2/issue/10211/comment/10206",
+    "id": "10206",
+    "author": {
+        "self": "http://localhost:8080/rest/api/2/user?username=admin",
+        "name": "admin",
+        "key": "JIRAUSER10000",
+        "emailAddress": "restapi.demo.2021@gmail.com",
+        "avatarUrls": {
+            "48x48": "http://localhost:8080/secure/useravatar?avatarId=10346",
+            "24x24": "http://localhost:8080/secure/useravatar?size=small&avatarId=10346",
+            "16x16": "http://localhost:8080/secure/useravatar?size=xsmall&avatarId=10346",
+            "32x32": "http://localhost:8080/secure/useravatar?size=medium&avatarId=10346"
+        },
+        "displayName": "restapi.demo.2021@gmail.com",
+        "active": true,
+        "timeZone": "America/Mexico_City"
+    },
+    "body": "This is my test comment2021-06-18T17:06:02.388",
+    "updateAuthor": {
+        "self": "http://localhost:8080/rest/api/2/user?username=admin",
+        "name": "admin",
+        "key": "JIRAUSER10000",
+        "emailAddress": "restapi.demo.2021@gmail.com",
+        "avatarUrls": {
+            "48x48": "http://localhost:8080/secure/useravatar?avatarId=10346",
+            "24x24": "http://localhost:8080/secure/useravatar?size=small&avatarId=10346",
+            "16x16": "http://localhost:8080/secure/useravatar?size=xsmall&avatarId=10346",
+            "32x32": "http://localhost:8080/secure/useravatar?size=medium&avatarId=10346"
+        },
+        "displayName": "restapi.demo.2021@gmail.com",
+        "active": true,
+        "timeZone": "America/Mexico_City"
+    },
+    "created": "2021-06-18T17:06:02.409-0500",
+    "updated": "2021-06-18T17:06:02.409-0500"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/rest/api/2/issue/10211/comment/10206
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	issueId=10211
+				commentId=10206
+Headers:		Accept=application/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=E5FFE2DFC54E3C9E1EDC6F70BE7940BD
+Multiparts:		<none>
+Body:
+{
+    "body": "This is an update of my comment2021-06-18T17:06:02.590"
+}
+HTTP/1.1 200 
+X-AREQUESTID: 1026x1258x1
+X-ASESSIONID: sxnhci
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+Set-Cookie: atlassian.xsrf.token=BKXJ-H224-33GP-0DMY_5afd59d8e2a481623d52fcb0bf74cf681a588f30_lin; Path=/
+X-AUSERNAME: admin
+Location: http://localhost:8080/rest/api/2/issue/10211/comment/10206
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 18 Jun 2021 22:06:02 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "self": "http://localhost:8080/rest/api/2/issue/10211/comment/10206",
+    "id": "10206",
+    "author": {
+        "self": "http://localhost:8080/rest/api/2/user?username=admin",
+        "name": "admin",
+        "key": "JIRAUSER10000",
+        "emailAddress": "restapi.demo.2021@gmail.com",
+        "avatarUrls": {
+            "48x48": "http://localhost:8080/secure/useravatar?avatarId=10346",
+            "24x24": "http://localhost:8080/secure/useravatar?size=small&avatarId=10346",
+            "16x16": "http://localhost:8080/secure/useravatar?size=xsmall&avatarId=10346",
+            "32x32": "http://localhost:8080/secure/useravatar?size=medium&avatarId=10346"
+        },
+        "displayName": "restapi.demo.2021@gmail.com",
+        "active": true,
+        "timeZone": "America/Mexico_City"
+    },
+    "body": "This is an update of my comment2021-06-18T17:06:02.590",
+    "updateAuthor": {
+        "self": "http://localhost:8080/rest/api/2/user?username=admin",
+        "name": "admin",
+        "key": "JIRAUSER10000",
+        "emailAddress": "restapi.demo.2021@gmail.com",
+        "avatarUrls": {
+            "48x48": "http://localhost:8080/secure/useravatar?avatarId=10346",
+            "24x24": "http://localhost:8080/secure/useravatar?size=small&avatarId=10346",
+            "16x16": "http://localhost:8080/secure/useravatar?size=xsmall&avatarId=10346",
+            "32x32": "http://localhost:8080/secure/useravatar?size=medium&avatarId=10346"
+        },
+        "displayName": "restapi.demo.2021@gmail.com",
+        "active": true,
+        "timeZone": "America/Mexico_City"
+    },
+    "created": "2021-06-18T17:06:02.409-0500",
+    "updated": "2021-06-18T17:06:02.620-0500"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/rest/api/2/issue/RFA-3
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	issueId=RFA-3
+Headers:		Accept=application/json
+				Content-Type=application/json; charset=UTF-8
+Cookies:		JSESSIONID=E5FFE2DFC54E3C9E1EDC6F70BE7940BD
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 204 
+X-AREQUESTID: 1026x1259x1
+X-ASESSIONID: sxnhci
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+Set-Cookie: atlassian.xsrf.token=BKXJ-H224-33GP-0DMY_75877a58dc109f5fa23b7234ce42ffb0ccef7b0a_lin; Path=/
+X-AUSERNAME: admin
+Cache-Control: no-cache, no-store, no-transform
+Content-Type: application/json;charset=UTF-8
+Date: Fri, 18 Jun 2021 22:06:02 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
